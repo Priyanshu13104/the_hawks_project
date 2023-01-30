@@ -45,6 +45,5 @@ session_start();
         navBar.classList.toggle("active")
       };
     </script>
-    <h2>hello</h2>
   </body>
 </html>
