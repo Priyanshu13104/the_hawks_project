@@ -48,10 +48,13 @@ session_start();
               name="password"
               type="password"
               class="input"
+              id="pass_field"
               placeholder="Password"
               required
             />
           </div>
+          <input type="checkbox" name="show_pass" id="show_pass"> 
+          <span class="show_password">show password</span>
           <div class="login-input-field">
             <input name="submit" type="submit" class="submit" value="Login" />
           </div>
@@ -66,7 +69,44 @@ session_start();
         </form>
       </div>
     </div>
-    <script src="indexjs.js"></script>
+    <!-- <script src="indexjs.js"></script> -->
+    <script>
+      hamburger = document.querySelector(".hamburger");
+let loginCont = document.getElementById('loginCont');
+let show_pass_button = document.getElementById('show_pass');
+let pass_field = document.getElementById('pass_field');
+show_pass_button.addEventListener('click', ()=>{
+  if(show_pass_button.checked === true){
+    pass_field.type = "text";
+  }else{
+    pass_field.type = "password";
+  }
+})
+
+hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    if(navBar.classList.contains("active")){
+    navBar.classList.remove("active");
+    loginCont.style.zIndex = '0';
+    }else{
+    loginCont.style.zIndex = '-20';
+    navBar.classList.add("active");
+    }
+}
+// let signupCont = document.getElementById('signupCont');
+
+// hamburger.onclick = function(){
+//     navBar = document.querySelector(".nav-bar");
+//     if(navBar.classList.contains("active")){
+//     navBar.classList.remove("active");
+//     signupCont.style.zIndex = '0';
+//     }else{
+//     signupCont.style.zIndex = '-20';
+//     navBar.classList.add("active");
+//     }
+// }
+
+    </script>
   </body>
 </html>
 
