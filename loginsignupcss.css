@@ -21,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px 15px 20px 15px;
-    background-color: rgba(152,177,91,0);
+    background-color: rgba(152,177,91,0.7);
     backdrop-filter: blur(0px);
     border-radius: 20px;
     /* z-index: -10; */
@@ -78,7 +78,8 @@ body{
     padding-top: 5px;
 }
 .login-bottom-text1 label a{
-    color: cyan;
+    color: white;
+    text-decoration: underline;
 }
 .login-bottom-text2{
     color: white;
@@ -88,7 +89,8 @@ body{
     padding: 10px 0 10px 0;
 }
 .login-bottom-text2 a{
-    color: cyan;
+    color: white;
+    text-decoration: underline;
 }
 
 /* Sign-up Css */
