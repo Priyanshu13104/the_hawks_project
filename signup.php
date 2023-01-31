@@ -36,13 +36,13 @@
                 </div>
                 <form action="" method="POST" id="form">
                     <div class="login-input-field">
-                        <input type="text" class="input" name="username" placeholder="Username" required/>
+                        <input type="text" class="signup-input" name="username" placeholder="Username" required/>
                     </div>
                     <div class="login-input-field">
-                        <input type="email" class="input" name="email" placeholder="email" required/>
+                        <input type="email" class="signup-input" name="email" placeholder="email" required/>
                     </div>
                     <div class="login-input-field">
-                        <input type="tel" class="input" name="phone" placeholder="Ph. Number" required/>
+                        <input type="tel" class="signup-input" name="phone" placeholder="Ph. Number" required/>
                     </div>
                     <div class="login-input-field">
                         <select id="inputarea" class="area-input" name="area">
@@ -82,7 +82,7 @@
                         </select>
                     </div>
                     <div class="login-input-field">
-                        <input type="password" name="password" class="input" placeholder="Password" required/>
+                        <input type="password" name="password" class="signup-input" placeholder="Password" required/>
                     </div>
                     <div class="login-input-field">
                         <input type="submit" name="submit" class="submit" value="Sign up"/>

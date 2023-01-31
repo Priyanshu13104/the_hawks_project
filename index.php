@@ -28,6 +28,7 @@ session_start();
             <a href="/">Hawkers</a>
           <li>
           <?php if($_SESSION['loggedin'] == true) {
+            echo '<li><a href="">Profile</a></li>';
             echo '<li><a href="logout.php">Logout</a></li>';
           }else{
             echo '<li><a href="login.php">Login</a></li>';

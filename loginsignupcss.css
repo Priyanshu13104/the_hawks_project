@@ -23,7 +23,7 @@ body{
     padding: 20px 15px 20px 15px;
     background-color: rgba(152,177,91,0.7);
     backdrop-filter: blur(0px);
-    border-radius: 20px;
+    border-radius: 10px;
     /* z-index: -10; */
 }
 .login-text{
@@ -46,14 +46,14 @@ body{
     border: none;
     outline: none;
     border-radius: 30px;
-    color: white;
+    color: black;
     padding: 0 0 0 20px;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(3px);
     /* z-index: -1; */
 }
 ::-webkit-input-placeholder{
-    color: white;
+    color: black;
 }
 .submit{
     border: none;
@@ -108,9 +108,9 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px 15px 20px 15px;
-    background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(2px);
-    border-radius: 20px;
+    background-color: rgba(152,177,91,0.7);
+    /* backdrop-filter: blur(2px); */
+    border-radius: 10px;
     /* z-index: -10; */
 }
 .signup-text{
@@ -119,6 +119,18 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px 0 15px 0;
+}
+.signup-input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+    padding: 0 0 0 20px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(3px);
+    /* z-index: -1; */
 }
 .area-input{
     height: 45px;
@@ -149,4 +161,68 @@ body{
     padding: 0 0 0 20px;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(3px);
+}
+@media only screen and (max-width: 900px){
+
+    .login-container{
+        background-color: rgba(255,255,255,0);
+    }
+
+    .login-text{
+        color: rgba(152,177,91);
+    }
+
+    .input{
+        color: black;
+        background: rgba(152,177,91,0.7);
+        backdrop-filter: blur(3px);
+    }
+
+    .login-bottom-text1 label a{
+        color: rgba(152,177,91);
+    }
+
+    .login-bottom-text2{
+        color: rgba(152,177,91);
+    }
+
+    .login-bottom-text2 a{
+        color: rgba(152,177,91);
+        text-decoration: underline;
+    }
+
+    /* signup */
+    .signup-container{
+        background-color: rgba(255,255,255,0);
+    }
+    
+    .signup-text{
+        color: rgba(152,177,91);
+    }
+
+    .signup-input{
+        color: black;
+        background: rgba(152,177,91,0.7);
+        backdrop-filter: blur(3px);
+        /* z-index: -1; */
+    }
+
+    ::-webkit-input-placeholder{
+        color: black;
+    }
+
+    .area-input{
+        background: rgba(152,177,91,0.7);
+        backdrop-filter: blur(3px);
+    }
+
+    .type-input{
+        background: rgba(152,177,91,0.7);
+        backdrop-filter: blur(3px);
+    }
+
+    .timezone-input{
+        background: rgba(152,177,91,0.7);
+        backdrop-filter: blur(3px);
+    }
 }
