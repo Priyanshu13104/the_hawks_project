@@ -72,16 +72,16 @@ session_start();
     <!-- <script src="indexjs.js"></script> -->
     <script>
       hamburger = document.querySelector(".hamburger");
-let loginCont = document.getElementById('loginCont');
-let show_pass_button = document.getElementById('show_pass');
-let pass_field = document.getElementById('pass_field');
-show_pass_button.addEventListener('click', ()=>{
-  if(show_pass_button.checked === true){
-    pass_field.type = "text";
-  }else{
-    pass_field.type = "password";
-  }
-})
+      let loginCont = document.getElementById('loginCont');
+      let show_pass_button = document.getElementById('show_pass');
+      let pass_field = document.getElementById('pass_field');
+      show_pass_button.addEventListener('click', ()=>{
+      if(show_pass_button.checked === true){
+        pass_field.type = "text";
+      }else{
+        pass_field.type = "password";
+      }
+      })
 
 hamburger.onclick = function(){
     navBar = document.querySelector(".nav-bar");

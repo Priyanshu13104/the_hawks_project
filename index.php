@@ -25,7 +25,7 @@ session_start();
             <a href="" class="active">Home</a>
           </li>
           <li> 
-            <a href="/">Hawkers</a>
+            <a href="hawker.html">Hawkers</a>
           <li>
           <?php if($_SESSION['loggedin'] == true) {
             echo '<li><a href="">Profile</a></li>';
