@@ -22,7 +22,7 @@
             </div>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="index.html  ">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="">Hawkers</a></li>
                     <li><a href="login.php" class="">Login</a></li>
                 </ul>
