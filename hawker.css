@@ -115,6 +115,7 @@ header{
     align-items: center;
     /* background-color: green; */
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hawker-card{
