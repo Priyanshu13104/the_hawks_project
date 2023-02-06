@@ -39,7 +39,6 @@ session_start();
     </header>
     <script>
       hamburger = document.querySelector(".hamburger");
-      let loginCont = document.getElementById("loginCont");
 
       hamburger.onclick = function () {
         navBar = document.querySelector(".nav-bar");
