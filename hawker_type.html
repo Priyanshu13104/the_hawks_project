@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="hawker.css">
+    <link rel="stylesheet" href="hawker_type.css">
 </head>
 <body>
     <header>
@@ -33,29 +33,30 @@
     <div class="hawker-card-container" id="hawker-card-container">
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?vegetables" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Vegetable Hawker's</div>
-            <button class="view-hawkers-btn"><a href="">View All</a></button>
+            <div class="hawker-type-text">Vegetable<br> Hawker's</div>
+            <button class="view-hawkers-btn"><a href="vegetable_hawk.html">View All</a></button>
         </div>
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?fruits" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Fruit Hawker's</div>
+            <div class="hawker-type-text">Fruit<br> Hawker's</div>
             <button class="view-hawkers-btn"><a href="">View All</a></button>
         </div>
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?coconuts" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Coconut Hawker's</div>
+            <div class="hawker-type-text">Coconut<br> Hawker's</div>
             <button class="view-hawkers-btn"><a href="">View All</a></button>
         </div>
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?vendor" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Pani Puri</div>
+            <div class="hawker-type-text">Pani<br> Puri</div>
             <button class="view-hawkers-btn"><a href="">View All</a></button>
         </div>
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?scrap" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Scrap Dealers</div>
+            <div class="hawker-type-text">Scrap<br> Dealers</div>
             <button class="view-hawkers-btn"><a href="">View All</a></button>
         </div>
+        
     </div>
     <script>
         hamburger = document.querySelector(".hamburger");
@@ -66,13 +67,8 @@
           navBar = document.querySelector(".nav-bar");
           if(navBar.classList.contains("active")){
             navBar.classList.remove("active");
-            hawkercrd.style.zIndex = '0';
-            hamburger.style.zIndex = '0';
-
-
             }else{
             hawkercrd.style.zIndex = '-1';
-            hamburger.style.zIndex = '10';
             navBar.classList.add("active");
             }
           

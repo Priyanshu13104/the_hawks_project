@@ -23,7 +23,7 @@
             <nav class="nav-bar">
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="hawker.html">Hawkers</a></li>
+                    <li><a href="hawker_type.html">Hawkers</a></li>
                     <li><a href="login.php" class="">Login</a></li>
                 </ul>
             </nav>

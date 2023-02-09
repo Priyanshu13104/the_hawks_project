@@ -26,7 +26,7 @@ session_start();
             <a href="index.php">Home</a>
           </li>
           <li>
-            <a href="hawker.html">Hawkers</a>
+            <a href="hawker_type.html">Hawkers</a>
           </li>
           <li>
             <a href="#" class="active">Login</a>
