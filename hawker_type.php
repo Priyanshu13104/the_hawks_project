@@ -1,3 +1,12 @@
+<?php 
+
+include 'dbconnect.php';
+
+$hawker_types = "Select * from hawker_categories";
+$result = mysqli_query($conn, $hawker_types);
+$num = mysqli_num_rows($result);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,15 +40,30 @@
     </header>
 
     <div class="hawker-card-container" id="hawker-card-container">
-        <div class="hawker-card" id="hawker-card">
-            <img src="https://source.unsplash.com/400x400/?vegetables" class="hawker-image" alt="hawker image">
-            <div class="hawker-type-text">Vegetable<br> Hawker's</div>
-            <button class="view-hawkers-btn"><a href="vegetable_hawk.html">View All</a></button>
-        </div>
-        <div class="hawker-card" id="hawker-card">
+
+    <?php 
+        for($i = 0; $i < $num; $i++){
+            $row = mysqli_fetch_assoc($result);
+            
+            echo '
+            <div class="hawker-card" id="hawker-card">
+                <img src="" class="hawker-image" alt="hawker image">
+                <div class="hawker-type-text">'.$row['category_name'].'<br> Hawkers</div>
+            
+                <input type="hidden" value="'.$row['category_id'].'" name="id">
+                <button type="submit" name="submit" class="view-hawkers-btn"><a href="vegetable_hawk.php?id='.$row['category_id'].'">View All</a></button>
+            
+            </div>
+            ';
+        }
+    ?>
+
+
+
+        <!-- <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?fruits" class="hawker-image" alt="hawker image">
             <div class="hawker-type-text">Fruit<br> Hawker's</div>
-            <button class="view-hawkers-btn"><a href="">View All</a></button>
+            <button class="view-hawkers-btn"><a href="folder/fruit_hawker.html">View All</a></button>
         </div>
         <div class="hawker-card" id="hawker-card">
             <img src="https://source.unsplash.com/400x400/?coconuts" class="hawker-image" alt="hawker image">
@@ -55,7 +79,7 @@
             <img src="https://source.unsplash.com/400x400/?scrap" class="hawker-image" alt="hawker image">
             <div class="hawker-type-text">Scrap<br> Dealers</div>
             <button class="view-hawkers-btn"><a href="">View All</a></button>
-        </div>
+        </div> -->
         
     </div>
     <script>
