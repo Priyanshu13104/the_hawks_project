@@ -9,8 +9,16 @@
     width: 50%;
     text-align: center;
 }
-
-.profile-img-container{
-    height: 60px;
-    width: 60px;
+.profile-img{
+     height: 250px;
+     border-radius: 150px;
+     margin-top: 80px;
+     margin-bottom: 40px; 
+}
+.profile-table{
+    text-align: center;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
 }

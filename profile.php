@@ -49,9 +49,28 @@ session_start();
 
   <div class="main-container">
     <div class="container1">
-            <div class="profle-img-container">
-              <img src="https://source.unsplash.com/400x400/?person" class="profile-img" alt="">
-            </div>
+      <img src="https://source.unsplash.com/400x400/?person" class="profile-img" alt="">
+      <div class="table-container">
+      <table class="profile-table">
+        <tr>
+          <td>NAME :</td>
+          <td>Priyanshu Prjapati</td>
+        </tr>
+        <tr>
+          <td>NAME :</td>
+          <td>Priyanshu Prjapati</td>
+        </tr>
+        <tr>
+          <td>NAME :</td>
+          <td>Priyanshu Prjapati</td>
+        </tr>
+        <tr>
+          <td>NAME :</td>
+          <td>Priyanshu Prjapati</td>
+        </tr>
+      </table>
+      </div>
+
     </div>
     <div class="container2">
             <p>hello</p>
