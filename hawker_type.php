@@ -14,6 +14,7 @@ $num = mysqli_num_rows($result);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="navbarcss.css">
     <link rel="stylesheet" href="hawker_type.css">
 </head>
 <body>
