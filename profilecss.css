@@ -5,15 +5,11 @@
     width: 50%;
     text-align: center;
 }
-.container2{
-    width: 50%;
-    text-align: center;
-}
 .profile-img{
-     height: 250px;
-     border-radius: 150px;
-     margin-top: 80px;
-     margin-bottom: 40px; 
+    height: 250px;
+    border-radius: 150px;
+    margin-top: 80px;
+    margin-bottom: 40px; 
 }
 .profile-table{
     text-align: center;
@@ -21,4 +17,21 @@
 .table-container{
     display: flex;
     justify-content: center;
+}
+
+
+
+
+/* RIGHT BUTTONS CSS */
+.container2{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.profile-btns{
+    width: 150px;
+    height: 80px;
+    
+    
 }

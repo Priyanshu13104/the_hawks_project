@@ -73,9 +73,15 @@ session_start();
 
     </div>
     <div class="container2">
-            <p>hello</p>
+              <button class="profile-btns">ADD PRODUCT</button><br>
+              <button class="profile-btns">DELETE PRODUCT</button><br>
+              <button class="profile-btns">EDIT PROFILE</button><br>
     </div>
   </div>
+
+<!-- right buttons -->
+
+
 
 
 </body>
