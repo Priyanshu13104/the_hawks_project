@@ -160,7 +160,7 @@ form a{
 }
 
 .left-container h2{
-    background: linear-gradient(90deg, rgba(230,79,69,1) 0%, rgba(232,106,111,1) 100%);
+    background: rgba(152,177,91,1);
     width: 130px;
     border-radius: 10px;
     text-align: center;
@@ -177,6 +177,8 @@ form a{
     font-weight: 600;
 }
 .left-container .logout{
+    color:white;
+    background-color: rgba(152,177,91,1);
     text-align: center;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -188,6 +190,7 @@ form a{
 }
 .left-container .logout:hover{
     background-color: #f7f7f7;
+    color: black;
 }
 .left-container .logout:focus{
     box-shadow: 0 0 0 0.2rem rgb(182 182 182 / 53%);
