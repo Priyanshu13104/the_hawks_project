@@ -171,10 +171,8 @@ form a{
     padding: 4px 8px;
     font-size: 28px;
 }
-.left-container h3{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
+.left-container p{
+    text-align: left;
 }
 .left-container .logout{
     color:white;

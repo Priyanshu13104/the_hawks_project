@@ -123,9 +123,17 @@ hamburger.onclick = function(){
       if($num == 1){
         $check_pass = "select * from users where password = '$password';";
         $run = mysqli_query($conn, $check_pass);
-        if($run){
+        $row = mysqli_fetch_assoc($result);
+        if($run){          
           $_SESSION['loggedin'] = true;
-          header("location: index.php");
+          $_SESSION['email'] = $email;
+          $_SESSION['name'] = $row['username'];
+          $_SESSION['area'] = $row['area'];
+          $_SESSION['hawker_type'] = $row['hawker_type'];
+          $_SESSION['phone'] = $row['phone'];
+          $_SESSION['timezone'] = $row['timezone'];
+          
+          header("location: profile.php");
         }else{
           echo "login false";
         }
